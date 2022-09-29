@@ -1,0 +1,45 @@
+.clients__container {
+  @extend %container;
+}
+
+.clients {
+  @extend %section;
+
+  &__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    color: var(--main-txt-cl);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__lists {
+    display: flex;
+    gap: 30px;
+  }
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+  }
+}
+
+.clients__link {
+  display: flex;
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+
+  transition: color var(--animation-time) var(--time-functial),
+    border var(--animation-time) var(--time-functial);
+
+  &:hover,
+  :focus {
+    border: 1px solid var(--accent-txt-cl);
+    color: var(--accent-txt-cl);
+  }
+}

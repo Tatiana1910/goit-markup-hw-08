@@ -1,0 +1,27 @@
+:root {
+  /*Fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /* Text colors*/
+  --main-txt-cl: #212121;
+  --light-txt-cl: #757575;
+  --accent-txt-cl: #2196f3;
+  --white-txt-cl: #ffffff;
+
+  /*Background  colors*/
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+  --white-bg-cl: #ffffff;
+
+  /*other*/
+  --light1-cl: #eeeeee;
+  --light2-cl: #ececec;
+  --black-cl: #000000;
+  --transparent-white-cl: rgba(255, 255, 255, 0.6);
+
+  /*animation*/
+
+  --animation-time: 250ms;
+  --time-functial: cubic-bezier(0.4, 0, 0.2, 1);
+}
