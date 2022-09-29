@@ -5,8 +5,10 @@
   &__container {
     @extend %container;
 
-    display: flex;
-    align-items: baseline;
+    @media screen and(min-width:1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 .footer .link {
@@ -16,13 +18,33 @@
     color: var(--accent-txt-cl);
   }
 }
-// .footer .link:hover,
-// .footer .link:focus {
-//   color: var(--accent-txt-cl);
-// }
+.footer__thumb {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 165px;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 0px;
+  }
+}
 .footer__address {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer .nav__logo {
@@ -55,10 +77,17 @@
   }
 }
 
-// .address__item:last-child {
-//   margin-bottom: 0px;
-// }
+.connections {
+  text-align: center;
+  margin-bottom: 60px;
 
+  @media screen and(min-width:768px) {
+    margin-bottom: 0px;
+  }
+  @media screen and(min-width:1200px) {
+    text-align: left;
+  }
+}
 .connections__title {
   font-weight: 700;
   font-size: 14px;
@@ -71,6 +100,7 @@
 
 .connections__list {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -100,7 +130,12 @@
 // }
 
 .follow {
-  margin-left: auto;
+  text-align: center;
+
+  @media screen and(min-width:1200px) {
+    text-align: left;
+    margin-left: auto;
+  }
 }
 
 .follow__title {
@@ -114,15 +149,18 @@
 }
 
 .follow__form {
-  display: inline-flex;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .follow__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
+
+  margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -136,12 +174,17 @@
   &:hover {
     border: 1px solid var(--white-txt-cl);
   }
-}
 
-// .follow__input:focus,
-// .follow__input:hover {
-//   border: 1px solid var(--white-txt-cl);
-// }
+  @media screen and(min-width:768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
 
 .follow__btn {
   width: 200px;
@@ -164,6 +207,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+
+  margin: auto;
 }
 
 .follow__icon {
