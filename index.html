@@ -22,12 +22,17 @@
   <body>
     <!----------------------Хедер---------------------------->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class=" header__container">
         <nav class="nav">
           <a class="nav__logo" href="./index.html"><span class="logo__accent">Web</span>Studio </a>
 
-          <ul class="nav__list list">
+          <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+          <!-- <ul class="nav__list list">
             <li class="nav__item"
               ><a class="nav__link link current" href="index.html">Студія</a></li
             >
@@ -36,10 +41,10 @@
             >
             <li class="nav__item">
               <a class="nav__link link" href="">Контакти</a></li>
-          </ul>
+          </ul> -->
         </nav>
 
-        <ul class="contacts list">
+        <!-- <ul class="contacts list">
           <li class="contacts__item"
             ><a class="contacts__link link" href="mailto"
               ><svg class="contacts__icon mail" width="16px " height="12px">
@@ -55,9 +60,11 @@
               +38 096 111 11 11</a
             ></li
           >
-        </ul>
+        </ul> -->
+
+        
       </div>
-    </header> -->
+    </header>
     <main>
       <!-----------------------------замовити послугу------------------------------>
       <section class="hero">
@@ -443,12 +450,15 @@
 
             <label  class="clientform__comment">
                <span class="clientform__name">Коментар</span>
-              <textarea class="clientform__texterea" name="comment" rows="5" placeholder="Введіть текст"></textarea>
+              <textarea class="clientform__texterea" name="comment" rows="5" placeholder="Введіть текст">
+
+              </textarea>
             </label>
 
 
             <label class="clientform__checkbox"> 
-            <input class="clientform__modal visually-hidden" type="checkbox" name="license" required></input>
+            <input class="clientform__modal visually-hidden" type="checkbox" name="license" required>
+          </input>
             <span class="clientform__field"></span>
             <span class="clientform__agreement">
               Погоджуюся з розсилкою та приймаю
@@ -468,7 +478,30 @@
         </form>
     </div>
   </div>
+  
+<div class="menu-container js-menu-container  " id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40"><use href="./images/icons.svg#icon-menu-close"></use> </svg>
+      </button>
+
+    </div>
+    
+ 
+ 
+ 
+
+
 
   <script src="./js/modal.js"></script>
+
+  <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    
   </body>
 </html>

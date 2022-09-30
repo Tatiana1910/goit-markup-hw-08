@@ -5,16 +5,19 @@
   @extend %section;
 
   &__list {
-    gap: 30px;
-
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
+      gap: 30px;
     }
   }
 
   &_lists {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
 
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -28,7 +31,7 @@
   &__div {
     display: flex;
     margin-bottom: 30px;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background-color: var(--light-bg-cl);
     border-radius: 4px;
