@@ -31,7 +31,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation-time) var(--time-functial);
 
-  width: 450px;
+  min-width: 320px;
   height: 609px;
 
   padding: 40px;

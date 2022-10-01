@@ -43,7 +43,7 @@
 .clients__link {
   display: flex;
   height: 92px;
-  width: 170px;
+  width: 210px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   justify-content: center;
@@ -57,5 +57,13 @@
   :focus {
     border: 1px solid var(--accent-txt-cl);
     color: var(--accent-txt-cl);
+  }
+
+  @media screen and(min-width:768px) {
+    width: 226px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 170px;
   }
 }
