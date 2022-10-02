@@ -27,16 +27,16 @@
 
           <div class="header__menu">
             <button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-              <svg width="40" height="40"><use href="images/icons.svg#icon-menu-open"</svg>
+              <svg width="40" height="40"><use href="images/icons.svg#icon-menu-open"></use></svg>
             </button>
           </div>
           <div class="navigation">
             <ul class="nav__list list">
               <li class="nav__item"
-                ><a class="nav__link link current" href="index.html">Студія</a></li
+                ><a class="nav__link link " href="index.html">Студія</a></li
               >
               <li class="nav__item"
-                ><a class="nav__link link" href="./portfolio.html">Портфоліо</a></li
+                ><a class="nav__link link current" href="./portfolio.html">Портфоліо</a></li
               >
               <li class="nav__item"> <a class="nav__link link" href="">Контакти</a></li>
             </ul>
@@ -78,12 +78,50 @@
             <li class="works__item">
               <a class="works__link" href="">
                 <div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-1.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                  />
+                  >
+                  
+                <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-1_lg.jpg    1x,
+      ./images/portfolio/img-1_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-1_md.jpg    1x,
+      ./images/portfolio/img-1_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-1_sm.jpg    1x,
+      ./images/portfolio/img-1_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf-1.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
+
+
                   <div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -101,12 +139,46 @@
             <li class="works__item">
               <a class="works__link" href=""
                 ><div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-2.jpg"
-                    alt="Два баскетболісти у прижку"
-                    width="370"
-                  /><div class="works__overlay">
+                  >            <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-2_lg.jpg    1x,
+      ./images/portfolio/img-2_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-2_md.jpg    1x,
+      ./images/portfolio/img-2_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-2_sm.jpg    1x,
+      ./images/portfolio/img-2_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf21.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture><div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                       сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -125,12 +197,46 @@
             <li class="works__item">
               <a class="works__link" href=""
                 ><div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-3.jpg"
-                    alt="Логотип ресторана"
-                    width="370"
-                  />
+                  >            <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-3_lg.jpg    1x,
+      ./images/portfolio/img-3_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-3_md.jpg    1x,
+      ./images/portfolio/img-3_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-3_sm.jpg    1x,
+      ./images/portfolio/img-3_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf-3.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
                   <div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -148,12 +254,46 @@
             <li class="works__item">
               <a class="works__link" href=""
                 ><div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-4.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  >            <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-4_lg.jpg    1x,
+      ./images/portfolio/img-4_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-4_md.jpg    1x,
+      ./images/portfolio/img-4_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-4_sm.jpg    1x,
+      ./images/portfolio/img-4_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf-4.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
                   <div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -170,12 +310,46 @@
             <li class="works__item">
               <a class="works__link" href=""
                 ><div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-5.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                  />
+                  >            <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-5_lg.jpg    1x,
+      ./images/portfolio/img-5_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-5_md.jpg    1x,
+      ./images/portfolio/img-5_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-5_sm.jpg    1x,
+      ./images/portfolio/img-5_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf-5.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
                   <div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -192,12 +366,46 @@
             <li class="works__item">
               <a class="works__link" href=""
                 ><div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-6.jpg"
-                    alt="Монітор з проєктом"
-                    width="370"
-                  />
+                  >            <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-6_lg.jpg    1x,
+      ./images/portfolio/img-6_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-6_md.jpg    1x,
+      ./images/portfolio/img-6_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-6_sm.jpg    1x,
+      ./images/portfolio/img-6_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf-6.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
                   <div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -215,12 +423,46 @@
             <li class="works__item">
               <a class="works__link" href=""
                 ><div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-7.jpg"
-                    alt="Відкрита книга"
-                    width="370"
-                  />
+                  >            <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-7_lg.jpg    1x,
+      ./images/portfolio/img-7_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-7_md.jpg    1x,
+      ./images/portfolio/img-7_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-7_sm.jpg    1x,
+      ./images/portfolio/img-7_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf-7.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
                   <div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -237,12 +479,46 @@
             <li class="works__item">
               <a class="works__link" href=""
                 ><div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-8.jpg"
-                    alt="Підвіска з логотипом "
-                    width="370"
-                  />
+                  >            <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-8_lg.jpg    1x,
+      ./images/portfolio/img-8_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-8_md.jpg    1x,
+      ./images/portfolio/img-8_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-8_sm.jpg    1x,
+      ./images/portfolio/img-8_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf-8.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
                   <div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -259,12 +535,46 @@
             <li class="works__item">
               <a class="works__link" href=""
                 ><div class="works__thumb"
-                  ><img
-                    class="works__img"
-                    src="./images/portfolio/portf-9.jpg"
-                    alt="Ноутбук в роботі"
-                    width="370"
-                  />
+                  >            <picture>
+  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/portfolio/img-9_lg.jpg    1x,
+      ./images/portfolio/img-9_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/portfolio/img-9_md.jpg    1x,
+      ./images/portfolio/img-9_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/portfolio/img-9_sm.jpg    1x,
+      ./images/portfolio/img-9_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/portfolio/portf-9.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
                   <div class="works__overlay">
                     <p class="works__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
